@@ -18,9 +18,14 @@ const createNewElement = () => {
 };
 const printScript = () => {
   //   console.log(outputDiv);
-  console.log(document.body.innerHTML);
   scriptOutput.innerText = document.body.innerHTML;
+};
+const clearScript = () => {
+  scriptOutput.innerText = "";
 };
 const addBorder = () => {
   outputDiv.style.border = "green 2px solid";
+};
+const clearOutput = () => {
+  outputDiv.innerHTML = "";
 };
