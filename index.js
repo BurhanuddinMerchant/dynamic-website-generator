@@ -18,3 +18,6 @@ const printScript = () => {
   console.log(document.body.innerHTML);
   scriptOutput.innerText = document.body.innerHTML;
 };
+const addBorder = () => {
+  outputDiv.style.border = "green 2px solid";
+};
