@@ -8,10 +8,7 @@ const applyProperty = () => {
   if (modifyPropertyValue && modifyIdValue && modifyValValue) {
     const elementToModify = document.getElementById(modifyIdValue);
     if (elementToModify) {
-      elementToModify.setAttribute(
-        "style",
-        modifyPropertyValue + ":" + modifyValValue
-      );
+      elementToModify.style[modifyPropertyValue] = modifyValValue;
     } else {
       console.log("No element Present by that Id");
     }
