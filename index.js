@@ -10,6 +10,7 @@ const createNewElement = () => {
   if (inputTagValue && inputContentValue && idInputValue) {
     const newElement = document.createElement(inputTagValue);
     newElement.innerText = inputContentValue;
+    newElement.id = idInputValue;
     outputDiv.append(newElement);
   } else {
     console.log("Information filled in incompletely");
