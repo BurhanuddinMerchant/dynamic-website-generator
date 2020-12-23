@@ -2,10 +2,12 @@ const inputTag = document.getElementById("tag");
 const inputContent = document.getElementById("content");
 const outputDiv = document.getElementById("output");
 const scriptOutput = document.getElementById("script-output");
+const idInput = document.getElementById("id-input");
 const createNewElement = () => {
   const inputTagValue = inputTag.value;
   const inputContentValue = inputContent.value;
-  if (inputTagValue && inputContentValue) {
+  const idInputValue = idInput.value;
+  if (inputTagValue && inputContentValue && idInputValue) {
     const newElement = document.createElement(inputTagValue);
     newElement.innerText = inputContentValue;
     outputDiv.append(newElement);
