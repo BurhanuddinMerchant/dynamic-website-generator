@@ -1,6 +1,7 @@
 const inputTag = document.getElementById("tag");
 const inputContent = document.getElementById("content");
 const outputDiv = document.getElementById("output");
+const scriptOutput = document.getElementById("script-output");
 const createNewElement = () => {
   const inputTagValue = inputTag.value;
   const inputContentValue = inputContent.value;
@@ -11,4 +12,9 @@ const createNewElement = () => {
   } else {
     console.log("Information filled in incompletely");
   }
+};
+const printScript = () => {
+  //   console.log(outputDiv);
+  console.log(document.body.innerHTML);
+  scriptOutput.innerText = document.body.innerHTML;
 };
