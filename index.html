@@ -7,13 +7,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <input type="text" id="tag" placeholder="tag" />
-    <input type="text" id="content" placeholder="content" />
-    <input type="text" id="id-input" placeholder="ID Input" />
-    <button onclick="createNewElement()">Create Element</button>
-    <div id="output" onclick="addBorder()"></div>
+    <h1>Dynamic Web Designer</h1>
+    <div>
+      <input type="text" id="tag" placeholder="tag" />
+      <input type="text" id="content" placeholder="content" />
+      <input type="text" id="id-input" placeholder="ID Input" />
+      <button onclick="createNewElement()">Create Element</button>
+    </div>
+    <hr />
+    <div>
+      <input type="text" id="modify-id" placeholder="id" />
+      <input type="type" id="modify-property" placeholder="property name" />
+      <input type="text" id="modify-value" placeholder="value" />
+      <button onclick="applyProperty()">Apply Property</button>
+    </div>
+    <hr />
     <button id="printScript" onclick="printScript()">Print Script</button>
+    <hr />
+    <h2>Output Section</h2>
+    <div id="output" onclick="addBorder()"></div>
+    <hr />
+    <h2>Script Section</h2>
     <div id="script-output"></div>
-    <script src="index.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/changes.js"></script>
   </body>
 </html>
